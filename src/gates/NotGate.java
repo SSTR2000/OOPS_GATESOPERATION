@@ -7,9 +7,8 @@ public class NotGate {
     public NotGate() {
     }
 
-    public NotGate(int A, int B) {
+    public NotGate(int A) {
         this.A = A;
-        this.B = B;
     }
 
     public int getA() {
@@ -20,26 +19,26 @@ public class NotGate {
         this.A = A;
     }
 
-    public int getB() {
-        return B;
+    private int getOutput(int A) {
+        if (A == 0) {
+            return 1;
+        } else
+            return 0;
     }
 
-    public void setB(int B) {
-        this.B = B;
+    private void printOutput(int A) {
+        if (A == 0) {
+            System.out.println("1");
+        } else
+            System.out.println("0");
     }
-
-    private int getOutput(int A, int B) {
-        int c = A * B;
-        return c;
-    }
-
-    private void printOutput(int A, int B) {
-        int c = A * B;
-        System.out.println(c);
     }
 
     public void printTruthTable() {
         System.out.println("----Truth Table for NotGate----");
-        System.out.println(A + " AND " + B + " results " + A * B);
+        if (A == 0)
+            System.out.println("NOT" + A + " results " + "1");
+        else
+            System.out.println("NOT" + A + " results " + "0");
     }
 }
