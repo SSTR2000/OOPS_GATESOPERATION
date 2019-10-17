@@ -29,17 +29,26 @@ public class OrGate {
     }
 
     private int getOutput(int A, int B) {
-        int c = A * B;
-        return c;
+        if (A == 1 | B == 1) {
+            return 1;
+        } else
+            return 0;
     }
 
     private void printOutput(int A, int B) {
-        int c = A * B;
-        System.out.println(c);
+        if (A == 1 | B == 1) {
+            System.out.println("1");
+        } else
+            System.out.println("0");
     }
 
     public void printTruthTable() {
         System.out.println("----Truth Table for OrGate----");
-        System.out.println(A + " AND " + B + " results " + A * B);
+        if (A == 1 | B == 1) {
+            System.out.println(A + " AND " + B + " results  1");
+        } else
+            System.out.println(A + " AND " + B + " results  0");
+
+    }
     }
 }
