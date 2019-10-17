@@ -43,10 +43,9 @@ public class AndGate {
 
     public void printTruthTable() {
         System.out.println("----Truth Table for AndGate----");
-        if (A == 0 | B == 0) {
-            System.out.println(A + " AND " + B + " results  0");
-        } else
-            System.out.println(A + " AND " + B + " results  1");
-
+        System.out.println("0" + " AND " + "0" + " results  0");
+        System.out.println("0" + " AND " + "1" + " results 0");
+        System.out.println("1" + " AND " + "0" + " results  0");
+        System.out.println("1" + " AND " + "1" + " results  1");
     }
 }
