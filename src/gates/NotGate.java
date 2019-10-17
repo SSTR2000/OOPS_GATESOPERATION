@@ -35,7 +35,7 @@ public class NotGate {
 
     public void printTruthTable() {
         System.out.println("----Truth Table for NotGate----");
-        System.out.println("NOT0" + "results  1");
+        System.out.println("NOT0" + " results  1");
         System.out.println("NOT1" + " results  0");
     }
 }
