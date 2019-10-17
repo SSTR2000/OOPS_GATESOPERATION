@@ -44,9 +44,9 @@ public class OrGate {
 
     public void printTruthTable() {
         System.out.println("----Truth Table for OrGate----");
-        System.out.println("0" + " AND " + "0" + " results  0");
-        System.out.println("0" + " AND " + "1" + " results  1");
-        System.out.println("1" + " AND " + "0" + " results  1");
-        System.out.println("1" + " AND " + "1" + " results  1");
+        System.out.println("0" + " OR " + "0" + " results  0");
+        System.out.println("0" + " OR " + "1" + " results  1");
+        System.out.println("1" + " OR " + "0" + " results  1");
+        System.out.println("1" + " OR" + "1" + " results  1");
     }
 }
